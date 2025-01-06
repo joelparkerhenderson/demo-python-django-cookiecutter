@@ -1,0 +1,16 @@
+services:
+  docs:
+    image: demo_python_django_cookiecutter_local_docs
+    container_name: demo_python_django_cookiecutter_local_docs
+    build:
+      context: .
+      dockerfile: ./compose/local/docs/Dockerfile
+    env_file:
+      - ./.envs/.local/.django
+    volumes:
+      - ./docs:/docs:z
+      - ./config:/app/config:z
+      - ./demo_python_django_cookiecutter:/app/demo_python_django_cookiecutter:z
+    ports:
+      - '9000:9000'
+    command: /start-docs
