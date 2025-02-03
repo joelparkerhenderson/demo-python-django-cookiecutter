@@ -2,55 +2,55 @@
 
 Demonstration of:
 
-* [Python](https://www.python.org/) programming language
+- [Python](https://www.python.org/) programming language
 
-* [Django](https://www.djangoproject.com/) web framework
+- [Django](https://www.djangoproject.com/) web framework
 
-* [Cookiecutter](https://github.com/cookiecutter/cookiecutter-django) framework for jumpstarting Django projects
+- [Cookiecutter](https://github.com/cookiecutter/cookiecutter-django) framework for jumpstarting Django projects
 
-* [AWS](https://aws.amazon.com/) cloud services
-  
+- [AWS](https://aws.amazon.com/) cloud services
+
 This demo briefly touches on these additional areas:
 
-* [WhiteNoise](https://whitenoise.readthedocs.io/) simplified static file serving for Python web apps
+- [WhiteNoise](https://whitenoise.readthedocs.io/) simplified static file serving for Python web apps
 
-* [Celery](https://docs.celeryproject.org/) distributed task queue
-  
-* [Flower](https://flower.readthedocs.io/) web application for monitoring and managing Celery clusters
+- [Celery](https://docs.celeryproject.org/) distributed task queue
 
-* [Docker](https://www.docker.com/) containerization
+- [Flower](https://flower.readthedocs.io/) web application for monitoring and managing Celery clusters
 
-* [Sentry](https://sentry.io/) application monitoring software
+- [Docker](https://www.docker.com/) containerization
 
-* [Mailpit](https://mailpit.axllent.org/) email testing for developers
+- [Sentry](https://sentry.io/) application monitoring software
 
-* [Ruff](https://github.com/astral-sh/ruff) fast Python linter and code formatter, written in Rust
+- [Mailpit](https://mailpit.axllent.org/) email testing for developers
+
+- [Ruff](https://github.com/astral-sh/ruff) fast Python linter and code formatter, written in Rust
 
 Beyond this demo, you may want to know about related areas such as:
 
-* [Django REST Framework (DRF)](https://www.django-rest-framework.org/)
+- [Django REST Framework (DRF)](https://www.django-rest-framework.org/)
 
-* [Django Ninja](https://django-ninja.dev/) web framework for building APIs with Django and Python 3.6+ type hints.
+- [Django Ninja](https://django-ninja.dev/) web framework for building APIs with Django and Python 3.6+ type hints.
 
-* [Django Watson](https://github.com/etianen/django-watson) Full-text multi-table search application for Django.
+- [Django Watson](https://github.com/etianen/django-watson) Full-text multi-table search application for Django.
 
-Hosting suggestions: 
+Hosting suggestions:
 
-* [Pythonanywhere](https://www.pythonanywhere.com/) - host, run, and code Python in the cloud
+- [Pythonanywhere](https://www.pythonanywhere.com/) - host, run, and code Python in the cloud
 
-* [Appliku](https://appliku.com/) - modern application deployment platform
+- [Appliku](https://appliku.com/) - modern application deployment platform
 
-* [Hetzner](https://www.hetzner.com/) - truly thrifty cloud hosting with virtual private servers
+- [Hetzner](https://www.hetzner.com/) - truly thrifty cloud hosting with virtual private servers
 
-* [Coolify](https://coolify.io/) - open-source platform as a service (PaaS)
+- [Coolify](https://coolify.io/) - open-source platform as a service (PaaS)
 
-* [Railway](https://railway.com/) - infrastructure platform
+- [Railway](https://railway.com/) - infrastructure platform
 
-* [Kubero](https://github.com/kubero-dev/kubero) designed for small 12- Factor apps
+- [Kubero](https://github.com/kubero-dev/kubero) designed for small 12- Factor apps
 
-* AWS Multiple locations, failover, cloudfront with waf, elastic beanstalk controlling ec2 in three zones, postgresql mirrored. 300 domains on my Django cms and apps. 
+- AWS Multiple locations, failover, cloudfront with waf, elastic beanstalk controlling ec2 in three zones, postgresql mirrored. 300 domains on my Django cms and apps.
 
-* Google CloudRun ($0 for small use cases), Google CloudSQL Postgres instance ($9/month for the smallest instance) and Google Cloud Storage ($2/month for 100GB and optional micro google compute instance if you need stateful services such as redis, celery, etc.), Google Secret Manager
+- Google CloudRun ($0 for small use cases), Google CloudSQL Postgres instance ($9/month for the smallest instance) and Google Cloud Storage ($2/month for 100GB and optional micro google compute instance if you need stateful services such as redis, celery, etc.), Google Secret Manager
 
 ## Prerequisites
 
@@ -146,15 +146,15 @@ cookiecutter gh:cookiecutter/cookiecutter-django
 Interaction:
 
 ```txt
-You've downloaded ~/.cookiecutters/cookiecutter-django before. 
-Is it okay to delete and re-download it? [y/n] (y): 
-  [1/27] project_name (My Awesome Project): Demo Python Django Cookiecutter    
-  [2/27] project_slug (demo_python_django_cookiecutter): 
+You've downloaded ~/.cookiecutters/cookiecutter-django before.
+Is it okay to delete and re-download it? [y/n] (y):
+  [1/27] project_name (My Awesome Project): Demo Python Django Cookiecutter
+  [2/27] project_slug (demo_python_django_cookiecutter):
   [3/27] description (Behold My Awesome Project!): Demonstration of Python and Django and Cookiecutter
   [4/27] author_name (Daniel Roy Greenfeld): Joel Parker Henderson
   [5/27] domain_name (example.com): joelparkerhenderson.com
   [6/27] email (joel-parker-henderson@joelparkerhenderson.com): joel@joelparkerhenderson.com
-  [7/27] version (0.1.0): 
+  [7/27] version (0.1.0):
   [8/27] Select open_source_license
     1 - MIT
     2 - BSD
@@ -166,8 +166,8 @@ Is it okay to delete and re-download it? [y/n] (y):
     1 - username
     2 - email
     Choose from [1/2] (1): 2
-  [10/27] timezone (UTC): 
-  [11/27] windows (n): 
+  [10/27] timezone (UTC):
+  [11/27] windows (n):
   [12/27] Select editor
     1 - None
     2 - PyCharm
@@ -219,7 +219,7 @@ Is it okay to delete and re-download it? [y/n] (y):
     5 - Drone
     Choose from [1/2/3/4/5] (1): 4
   [26/27] keep_local_envs_in_vcs (y): y
-  [27/27] debug (n): 
+  [27/27] debug (n):
 ```
 
 ### Cookiecutter output JSON
@@ -274,170 +274,127 @@ The output JSON starts with this:
 
 Project-related:
 
-* `.envs` = Environment variables for local development and production deployment.
-* `config` = Configuration files for various services.
+- `.envs` = Environment variables for local development and production deployment.
 
-* `demo_python_django_cookiecutter` = Python package for this project.
+- `config` = Configuration files for various services.
 
-* `docs` = Documentation
+- `demo_python_django_cookiecutter` = Python package for this project.
 
-* `locale` = Locale specific settings, typically for languages and translations.
+- `docs` = Documentation
 
-* `manage.py` = [Django management](https://docs.djangoproject.com/en/5.1/ref/django-admin/) command-line utility for administrative tasks, akin to an easier django-admin.
+- `locale` = Locale specific settings, typically for languages and translations.
 
-* `merge_production_dotenvs_in_dotenv.py` = The intent is that production env files are NOT into source control, because they contain secrets However, they are added to the docker image by docker-compose when you run it.
+- `manage.py` = [Django management](https://docs.djangoproject.com/en/5.1/ref/django-admin/) command-line utility for administrative tasks, akin to an easier django-admin.
 
-* `package.json` = [Node.js](https://nodejs.org/) fundamental manifest, storing information about applications, modules, packages, and more.
+- `merge_production_dotenvs_in_dotenv.py` = The intent is that production env files are NOT into source control, because they contain secrets However, they are added to the docker image by docker-compose when you run it.
 
-* `pyproject.toml` = configuration file used by packaging tools, as well as other tools such as linters, type checkers, etc. 
+- `package.json` = [Node.js](https://nodejs.org/) fundamental manifest, storing information about applications, modules, packages, and more.
 
-* `requirements` = Python package requirements file which lists all the dependencies your project needs, and can be used to install those dependencies using pip.
+- `pyproject.toml` = configuration file used by packaging tools, as well as other tools such as linters, type checkers, etc.
 
-* `tests` = Project-specific tests.
+- `requirements` = Python package requirements file which lists all the dependencies your project needs, and can be used to install those dependencies using pip.
+
+- `tests` = Project-specific tests.
 
 Git-related:
 
-* `.git` = [git](https://git-scm.com/) version control repository
+- `.git` = [git](https://git-scm.com/) version control repository
 
-* `.gitattributes` = [gitattributes](https://git-scm.com/docs/gitattributes) tells git to use attributes to pathnames.
+- `.gitattributes` = [gitattributes](https://git-scm.com/docs/gitattributes) tells git to use attributes to pathnames.
 
-* `.github` = [GitHub](https://github.com/) configuration files, such as for GitHub workflows.
+- `.github` = [GitHub](https://github.com/) configuration files, such as for GitHub workflows.
 
-* `.gitignore` = [gitignore](https://git-scm.com/docs/gitignore) tells git which files to ignore.
+- `.gitignore` = [gitignore](https://git-scm.com/docs/gitignore) tells git which files to ignore.
 
 Docker-related:
 
-* `.devcontainer` = The configuration files for a dev container.
+- `.devcontainer` = The configuration files for a dev container.
 
-* `.dockerignore` = [Docker](https://docs.docker.com/reference/dockerfile/) file that describes files and directories that you want to exclude when building a Docker image.
+- `.dockerignore` = [Docker](https://docs.docker.com/reference/dockerfile/) file that describes files and directories that you want to exclude when building a Docker image.
 
-* `compose` = [Docker Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container applications..
+- `compose` = [Docker Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container applications..
 
-* `docker-compose.docs.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for the documentation.
+- `docker-compose.docs.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for the documentation.
 
-* `docker-compose.local.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for local development.
+- `docker-compose.local.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for local development.
 
-* `docker-compose.production.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for production deployment.
+- `docker-compose.production.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for production deployment.
 
 Adjunct-tool-related:
 
-* `.editorconfig` = [EditorConfig](https://editorconfig.org/) is tool for maintaining consistent coding styles.
+- `.editorconfig` = [EditorConfig](https://editorconfig.org/) is tool for maintaining consistent coding styles.
 
-* `.pre-commit-config.yaml` = [pre-commit](https://pre-commit.com/) is a framework for managing and maintaining multi-language pre-commit hooks.
+- `.pre-commit-config.yaml` = [pre-commit](https://pre-commit.com/) is a framework for managing and maintaining multi-language pre-commit hooks.
 
-* `.readthedocs.yml` = [Read The Docs](https://readthedocs.com) is a tool to help build, host, and share documentation.
+- `.readthedocs.yml` = [Read The Docs](https://readthedocs.com) is a tool to help build, host, and share documentation.
 
-* `cspell.json` = [CSpell](https://cspell.org/) is a a spell checker for code.
+- `cspell.json` = [CSpell](https://cspell.org/) is a a spell checker for code.
 
-* `webpack` = [webpack](https://webpack.js.org/) is a tool that bundles JavaScript files and other assets into static bundles for use in browsers. 
+- `webpack` = [webpack](https://webpack.js.org/) is a tool that bundles JavaScript files and other assets into static bundles for use in browsers.
 
 Generic-repository-related:
 
-* `./README.md` = Top level documentation
+- `./README.md` = Top level documentation
 
-* `./CONTRIBUTORS.txt` = List of people who have made significant contributions.
+- `./CONTRIBUTORS.txt` = List of people who have made significant contributions.
 
-* `./COPYING` = Copying license, such as the GPL-3 license.
+- `./COPYING` = Copying license, such as the GPL-3 license.
 
-* `./LICENSE` = General license, such as the GPL-3 license.
-
+- `./LICENSE` = General license, such as the GPL-3 license.
 
 ## Settings
 
 Read about [settings](https://cookiecutter-django.readthedocs.io/en/latest/1-getting-started/settings.html).
 
+## Get pre-comment
 
-## Basic Commands
+Run:
 
-
-### Setting Up Your Users
-
-- To create a **normal user account**, just go to Sign Up and fill out the form. Once you submit it, you'll see a "Verify Your E-mail Address" page. Go to your console to see a simulated email verification message. Copy the link into your browser. Now the user's email should be verified and ready to go.
-
-- To create a **superuser account**, use this command:
-
-      $ python manage.py createsuperuser
-
-For convenience, you can keep your normal user logged in on Chrome and your superuser logged in on Firefox (or similar), so that you can see how the site behaves for both kinds of users.
-
-### Type checks
-
-Running type checks with mypy:
-
-    $ mypy demo_python_django_cookiecutter
-
-### Test coverage
-
-To run the tests, check your test coverage, and generate an HTML coverage report:
-
-    $ coverage run -m pytest
-    $ coverage html
-    $ open htmlcov/index.html
-
-#### Running tests with pytest
-
-    $ pytest
-
-### Live reloading and Sass CSS compilation
-
-Moved to [Live reloading and SASS compilation](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally.html#using-webpack-or-gulp).
-
-### Celery
-
-This app comes with Celery.
-
-To run a celery worker:
-
-```bash
-cd demo_python_django_cookiecutter
-celery -A config.celery_app worker -l info
+```
+pip install --upgrade pip
+pip install pre-commit
+pre-commit install
+pre-commit
+pre-commit run --all-files
 ```
 
-Please note: For Celery's import magic to work, it is important _where_ the celery commands are run. If you are in the same folder with _manage.py_, you should be right.
+Success looks like a bunch of green checks, and maybe some red warnings.
 
-To run [periodic tasks](https://docs.celeryq.dev/en/stable/userguide/periodic-tasks.html), you'll need to start the celery beat scheduler service. You can start it as a standalone process:
-
-```bash
-cd demo_python_django_cookiecutter
-celery -A config.celery_app beat
+```stdout
+djLint linting for Django...Passed
 ```
 
-or you can embed the beat service inside a worker with the `-B` option (not recommended for production use):
+## Docker
 
-```bash
-cd demo_python_django_cookiecutter
-celery -A config.celery_app worker -B -l info
+Follow [Getting Up and Running Locally With Docker](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally-docker.html)
+
+Build the stack:
+
+```sh
+docker compose -f docker-compose.local.yml build
 ```
 
-### Email Server
+You should see Docker downloading dependencies and building them.
 
-In development, it is often nice to be able to see emails that are being sent from your application. For that reason local SMTP server [Mailpit](https://github.com/axllent/mailpit) with a web interface is available as docker container.
+Success looks like:
 
-Container mailpit will start automatically when you will run all docker containers.
-Please check [cookiecutter-django Docker documentation](https://cookiecutter-django.readthedocs.io/en/latest/2-local-development/developing-locally-docker.html) for more details how to start all containers.
+```stdout
+✔ Service postgres      Built
+✔ Service celerybeat    Built
+✔ Service django        Built
+✔ Service celeryworker  Built
+✔ Service flower        Built
+✔ Service node          Built
+```
 
-With Mailpit running, to view messages that are sent by your application, open your browser and go to `http://127.0.0.1:8025`
+Run the stack:
 
-### Sentry
+```sh
+docker compose -f docker-compose.local.yml up
+```
 
-Sentry is an error logging aggregator service. You can sign up for a free account at <https://sentry.io/signup/?code=cookiecutter> or download and host it yourself.
-The system is set up with reasonable defaults, including 404 logging and integration with the WSGI application.
+The site should start and be accessible.
 
-You must set the DSN url in production.
+- If you selected Webpack or Gulp as your frontend pipeline, then visit [http://localhost:3000](http://localhost:3000).
 
-## Deployment
-
-The following details how to deploy this application.
-
-### Docker
-
-See detailed [cookiecutter-django Docker documentation](https://cookiecutter-django.readthedocs.io/en/latest/3-deployment/deployment-with-docker.html).
-
-### Custom Bootstrap Compilation
-
-The generated CSS is set up with automatic Bootstrap recompilation with variables of your choice.
-Bootstrap v5 is installed using npm and customised by tweaking your variables in `static/sass/custom_bootstrap_vars`.
-
-You can find a list of available variables [in the bootstrap source](https://github.com/twbs/bootstrap/blob/v5.1.3/scss/_variables.scss), or get explanations on them in the [Bootstrap docs](https://getbootstrap.com/docs/5.1/customize/sass/).
-
-Bootstrap's javascript as well as its dependencies are concatenated into a single file: `static/js/vendors.js`.
+- Otherwise, visit [http://localhost:8000](http://localhost:8000) otherwise.

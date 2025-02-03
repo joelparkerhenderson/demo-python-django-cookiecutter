@@ -6,8 +6,14 @@ module.exports = {
   target: 'web',
   context: path.join(__dirname, '../'),
   entry: {
-    project: path.resolve(__dirname, '../demo_python_django_cookiecutter/static/js/project'),
-    vendors: path.resolve(__dirname, '../demo_python_django_cookiecutter/static/js/vendors'),
+    project: path.resolve(
+      __dirname,
+      '../demo_python_django_cookiecutter/static/js/project',
+    ),
+    vendors: path.resolve(
+      __dirname,
+      '../demo_python_django_cookiecutter/static/js/vendors',
+    ),
   },
   output: {
     path: path.resolve(

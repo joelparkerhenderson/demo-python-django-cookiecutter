@@ -39,15 +39,14 @@ services:
     image: docker.io/axllent/mailpit:latest
     container_name: demo_python_django_cookiecutter_local_mailpit
     ports:
-      - "8025:8025"
+      - '8025:8025'
 
   redis:
     image: docker.io/redis:6
     container_name: demo_python_django_cookiecutter_local_redis
-    
+
     volumes:
       - demo_python_django_cookiecutter_local_redis_data:/data
-    
 
   celeryworker:
     <<: *django

@@ -96,7 +96,9 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 # MIGRATIONS
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#migration-modules
-MIGRATION_MODULES = {"sites": "demo_python_django_cookiecutter.contrib.sites.migrations"}
+MIGRATION_MODULES = {
+    "sites": "demo_python_django_cookiecutter.contrib.sites.migrations",
+}
 
 # AUTHENTICATION
 # ------------------------------------------------------------------------------
@@ -325,9 +327,13 @@ ACCOUNT_ADAPTER = "demo_python_django_cookiecutter.users.adapters.AccountAdapter
 # https://docs.allauth.org/en/latest/account/forms.html
 ACCOUNT_FORMS = {"signup": "demo_python_django_cookiecutter.users.forms.UserSignupForm"}
 # https://docs.allauth.org/en/latest/socialaccount/configuration.html
-SOCIALACCOUNT_ADAPTER = "demo_python_django_cookiecutter.users.adapters.SocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = (
+    "demo_python_django_cookiecutter.users.adapters.SocialAccountAdapter"
+)
 # https://docs.allauth.org/en/latest/socialaccount/configuration.html
-SOCIALACCOUNT_FORMS = {"signup": "demo_python_django_cookiecutter.users.forms.UserSocialSignupForm"}
+SOCIALACCOUNT_FORMS = {
+    "signup": "demo_python_django_cookiecutter.users.forms.UserSocialSignupForm",
+}
 
 # django-rest-framework
 # -------------------------------------------------------------------------------
