@@ -275,7 +275,6 @@ The output JSON starts with this:
 Project-related:
 
 * `.envs` = Environment variables for local development and production deployment.
-
 * `config` = Configuration files for various services.
 
 * `demo_python_django_cookiecutter` = Python package for this project.
