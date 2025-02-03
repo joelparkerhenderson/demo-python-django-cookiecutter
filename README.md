@@ -1,7 +1,5 @@
 # Demo Python Django Cookiecutter
 
-# Demo Python Django Cookiecutter AWS
-
 Demonstration of:
 
 * [Python](https://www.python.org/) programming language
@@ -277,46 +275,73 @@ The output JSON starts with this:
 Project-related:
 
 * `.envs` = Environment variables for local development and production deployment.
+
 * `config` = Configuration files for various services.
+
 * `demo_python_django_cookiecutter` = Python package for this project.
+
 * `docs` = Documentation
+
 * `locale` = Locale specific settings, typically for languages and translations.
+
 * `manage.py` = [Django management](https://docs.djangoproject.com/en/5.1/ref/django-admin/) command-line utility for administrative tasks, akin to an easier django-admin.
+
 * `merge_production_dotenvs_in_dotenv.py` = The intent is that production env files are NOT into source control, because they contain secrets However, they are added to the docker image by docker-compose when you run it.
+
 * `package.json` = [Node.js](https://nodejs.org/) fundamental manifest, storing information about applications, modules, packages, and more.
+
 * `pyproject.toml` = configuration file used by packaging tools, as well as other tools such as linters, type checkers, etc. 
+
 * `requirements` = Python package requirements file which lists all the dependencies your project needs, and can be used to install those dependencies using pip.
+
 * `tests` = Project-specific tests.
 
 Git-related:
 
 * `.git` = [git](https://git-scm.com/) version control repository
+
 * `.gitattributes` = [gitattributes](https://git-scm.com/docs/gitattributes) tells git to use attributes to pathnames.
+
 * `.github` = [GitHub](https://github.com/) configuration files, such as for GitHub workflows.
+
 * `.gitignore` = [gitignore](https://git-scm.com/docs/gitignore) tells git which files to ignore.
+
 Docker-related:
 
 * `.devcontainer` = The configuration files for a dev container.
+
 * `.dockerignore` = [Docker](https://docs.docker.com/reference/dockerfile/) file that describes files and directories that you want to exclude when building a Docker image.
+
 * `compose` = [Docker Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container applications..
+
 * `docker-compose.docs.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for the documentation.
+
 * `docker-compose.local.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for local development.
+
 * `docker-compose.production.yml` = [Docker Compose](https://docs.docker.com/compose/) instructions for production deployment.
 
 Adjunct-tool-related:
 
 * `.editorconfig` = [EditorConfig](https://editorconfig.org/) is tool for maintaining consistent coding styles.
+
 * `.pre-commit-config.yaml` = [pre-commit](https://pre-commit.com/) is a framework for managing and maintaining multi-language pre-commit hooks.
+
 * `.readthedocs.yml` = [Read The Docs](https://readthedocs.com) is a tool to help build, host, and share documentation.
+
 * `cspell.json` = [CSpell](https://cspell.org/) is a a spell checker for code.
+
 * `webpack` = [webpack](https://webpack.js.org/) is a tool that bundles JavaScript files and other assets into static bundles for use in browsers. 
 
 Generic-repository-related:
 
 * `./README.md` = Top level documentation
+
 * `./CONTRIBUTORS.txt` = List of people who have made significant contributions.
+
 * `./COPYING` = Copying license, such as the GPL-3 license.
+
 * `./LICENSE` = General license, such as the GPL-3 license.
+
 
 ## Settings
 
