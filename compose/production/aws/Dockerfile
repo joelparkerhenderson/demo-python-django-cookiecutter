@@ -1,4 +1,4 @@
-FROM docker.io/amazon/aws-cli:2.36.13
+FROM docker.io/amazon/aws-cli:2.36.14
 
 # Clear entrypoint from the base image, otherwise it's always calling the aws CLI
 ENTRYPOINT []
